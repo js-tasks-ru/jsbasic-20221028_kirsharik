@@ -1,3 +1,5 @@
 function namify(users) {
-  // ваш код...
+  let userNameArr = [];
+  users.forEach((item) => {userNameArr.push(item.name)});
+  return userNameArr;
 }

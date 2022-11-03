@@ -1,3 +1,11 @@
 function isEmpty(obj) {
-  // ваш код...
+  
+  let arr = [];
+
+  for (let key in obj) {
+    arr.push(key)
+  }
+
+  return (!Boolean(arr.length));
+
 }
