@@ -3,9 +3,9 @@ function toggleText() {
   let text = document.getElementById('text');
   function hideText() {
     if (text.hidden == false) {
-     text.setAttribute('hidden', true)
+     text.hidden = true
      } else {
-      text.removeAttribute('hidden')
+      text.hidden = false
     };
   }
   button.addEventListener('click', hideText);
