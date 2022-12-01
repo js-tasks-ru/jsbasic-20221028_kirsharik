@@ -6,17 +6,6 @@ export default class ProductCard {
     this.elem = this.render();
   }
 
-  // addBtnOnClick(ev) {
-  //   let addBtn = ev.target.closest('.card__button');
-  //   if (!addBtn) return;
-
-  //   const eventevent = new CustomEvent("product-add", {
-  //     detail: this.product.id,
-  //     bubbles: true
-  //   });
-    
-  //   this.dispatchEvent(eventevent); //нерабочий вариант
-
   render() {
 
     const productDiv = createElement(`
@@ -39,7 +28,6 @@ export default class ProductCard {
       bubbles: true
     });
 
-    // productDiv.addEventListener('click', this.addBtnOnClick); //нерабочий вариант
     productDiv.addEventListener('click', function(ev) {
 
       let addBtn = ev.target.closest('.card__button');
@@ -47,9 +35,7 @@ export default class ProductCard {
 
       this.dispatchEvent(eventevent);
 
-      console.log(eventevent)
-
-    }); //рабочий вариант
+    });
 
     return productDiv;
   }
