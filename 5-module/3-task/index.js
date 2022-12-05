@@ -8,6 +8,8 @@ function initCarousel() {
   const carouselItems = document.querySelector('.carousel__inner');
 
   const itemWidth = carouselItems.offsetWidth;
+  console.log(carouselItems);
+  console.log(carouselItems.offsetWidth);
 
   let slideSize = 0;
 
